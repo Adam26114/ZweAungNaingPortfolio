@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
+
+
+:root{
+    --color1:#e9a118;
+    --color2:#ec5e0c;
+    --primary-font:'Outfit', sans-serif;
+    --secondary-font:'Darker Grotesque', sans-serif;
+}
+
+*{
+    font-family: var(--primary-font);
+}
+/* Start Header */
+/* Start Navbar */
+.navicons,.navicons:active,.navicons:hover{
+    box-shadow:rgba(220, 53, 69,0.3);
+}
+
+.navicons{
+    padding:15px;
+    z-index:100;
+}
+
+
+.line{
+    width:25px;
+    height:3px;
+
+    margin:3px;
+    position: relative;
+
+    transition: all 0.5s;
+
+    transition:all .3s;
+}
+
+.line::before,.line::after{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+    top:0;
+    transition:all .3s;
+}
+
+.line::before{
+    transform:translateY(-7px);
+    box-shadow:0 7px 0px #fff;
+}
+
+.line::after{
+    transform:translateY(7px);
+}
+
+.crossxs.line::before{
+    transform:translateY(0px) rotate(45deg);
+    box-shadow:none;
+}
+
+.crossxs.line::after{
+    transform:translateY(0) rotate(-45deg);
+    opacity:1;
+}
+
+/* Engd Navbar */
+
+/* Start banner */
+
+
+
+.profiles{
+    background:linear-gradient(
+        to right,
+        var(--color1),
+        var(--color2)
+    );
+}
+.introduce,.seeless{
+    font-family: var(--secondary-font);
+    font-weight:bold;
+    text-align: justify;
+}
+
+
+.seeless{
+    display:none;
+}
+
+.seeless.seemore{
+    display:inline;
+}
+
+.dots.seemore{
+    display:none;
+}
+
+/* End banner */
+
+/* Start Skill Section */
+.progress{
+    background-color:#747474;
+    height:6px;
+}
+/* End Skill Section */
+/* End Header */
+
+/* Start Project Section */
+.infos{
+
+    height:100%;
+    position: relative;
+}
+
+.titles{
+    position:absolute;
+    left:calc(50% - 25px);
+    top:-25px;
+}
+
+.titles i{
+    width:50px;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    border-radius:50%;
+}
+
+
+.border-shadows{
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+/* End Project Section */
+/* Start Markting Section */
+
+.bg-imgs-red{
+    background:linear-gradient(135deg, rgba(88, 3, 3, 0.1),rgba(103, 89, 232, 0.1));
+    backdrop-filter:blur(100px);
+    -webkit-backdrop-filter:blur(100px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.bg-imgs{
+    background:linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter:blur(100px);
+    -webkit-backdrop-filter:blur(100px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.bg-img-form,.bg-img-form:focus,.bg-img-form:active,.bg-img-form:hover{
+    background:linear-gradient(135deg, rgba(124, 124, 124, 0.405),rgba(147, 147, 147, 0.201));
+    backdrop-filter:blur(100px);
+    -webkit-backdrop-filter:blur(100px);
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+    color:#fff;
+}
+
+.bg-img-form::placeholder{
+    color:#ffffff9a;
+}
+
+
+
+/* End Markting Section */
+/* Start member section */
+
+
+.icons{
+    font-size: 12px;
+}
+
+@media (min-width: 	576px ) {
+    .icons{
+        font-size: 20px;
+    }
+}
+
+
+/* End member section */
+
+/* Start Footer Section */
+.border-tops{
+    border-top:1px solid rgba(255,255,255,0.5);
+}
+/* End Footer Section */
+
+/* Scorll backtopbtn  */
+.progresses{
+    width:50px;
+    height:50px;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+    /* border:1px solid rgba(216, 119, 119, 0.474); */
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+    cursor:pointer;
+
+    visibility:hidden;
+    transition:all 0.5s;
+    opacity:0;
+}
+
+
+.bticon{
+    width:100%;
+    height:100%;
+    
+}
+
+
+.progresses.top{
+    visibility:visible;
+    opacity:1;
+}
+
+.progress-value{
+    display:block;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    border-radius:100%;
+    display:grid;
+    place-items:center;
+}
+
+.progress-value i{
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Scorll backtopbtn  */
+/* animation */
+.ani-left{
+    animation: toleft 2s;
+}
+
+.ani-right{
+    animation: toright 2s;
+}
+
+.ani-top{
+    animation: totop 2s;
+}
+
+.ani-bottom{
+    animation: tobottom 2s;
+}
+
+
+
+@keyframes toleft {
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes toright {
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes totop{
+    0%{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes tobottom{
+    0%{
+        transform:translateY(100px);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+/* animation */
