@@ -9,6 +9,8 @@
     --color2:#ec5e0c;
     --primary-font:'Outfit', sans-serif;
     --secondary-font:'Darker Grotesque', sans-serif;
+    --red:#dc3545;
+    --redh:#e66673;
 }
 
 *{
@@ -312,3 +314,110 @@
 }
 
 /* animation */
+
+/* pagination */
+.pagination {
+    height: 36px;
+    margin: 18px 0;
+    color: var(--red);
+    
+}
+
+.pagination ul {
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    margin-left: 0;
+    color: #fff;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    
+}
+
+.pagination li {
+    display: inline;
+    color: var(--red);
+}
+
+.pagination a {
+    float: left;
+    padding: 0 14px;
+    line-height: 34px;
+    color: var(--red);
+    text-decoration: none;
+    border: 1px solid var(--red);
+    border-left-width: 0;
+    background-color: transparent;
+
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.pagination a:hover,
+.pagination .active a {
+    background-color: var(--red);
+    color: #ffffff;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);   
+}
+
+.pagination a:hover{
+    background-color: var(--redh);
+}
+
+.pagination a:focus {
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+
+.pagination .active a {
+    color: #ffffff;
+    box-shadow:none;
+    outline: none;
+    border:#fff;
+    cursor: default;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.pagination .disabled span,
+.pagination .disabled a,
+.pagination .disabled a:hover {
+    color: #999999;
+    background-color: transparent;
+    cursor: default;
+    border:1px solid rgba(17, 17, 17, 0);
+}
+
+.pagination li:first-child a {
+    border-left-width: 1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+   border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.pagination li:last-child a {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    border:1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.pagination-centered {
+    text-align: center;
+}
+
+.pagination-right {
+    text-align: right;
+}
+/* Pagination */
