@@ -659,7 +659,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-8 mt-3">
-                    <form accept="" method="">
+                    <form accept="" method="" onsubmit="sendMail(); reset(); return false; ">
 
                         <div class="row">
                             <div class="col-6">
@@ -669,12 +669,12 @@
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control bg-img-form" placeholder="Enter Your Email">
+                                    <input type="email" name="email" id="email" class="form-control bg-img-form" placeholder="Enter Your Email">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group my-2">
-                                    <input type="text" name="name" id="name" class="form-control bg-img-form" placeholder="Subject">
+                                    <input type="text" name="subject" id="subject" class="form-control bg-img-form" placeholder="Subject">
                                 </div>
                                
                                 <div class="my-2">
@@ -684,6 +684,24 @@
                         </div>
                     </form>
 
+                    <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript">
+
+                        function sendMail(){
+                            Email.send({
+                                Host : "smtp.gmail.com",
+                                Username : "zweaungnaing26@gmail.com",
+                                Password : "Zwe26",
+                                To : 'zweaungnaing26@gmail.com',
+                                From : document.getElementById("email").value,
+                                Subject : document.getElementById("subject").value,
+                                Body : document.getElementById("message").value
+                            }).then(
+                            message => alert(message)
+                            );
+                        }
+
+                    </script>
+
                     <div class="d-flex justify-content-end">
                         <button type="button" class="btn btn-danger px-4"><i class="fas fa-paper-plane me-1"></i> Send Message</button>
                     </div>
@@ -692,7 +710,7 @@
                 <div class="col-sm-12 col-md-4 order-md-first mt-3">
                     <div>
                         <div class="d-flex">
-                            <i class="fas fa-phone fs-4 mt-2"></i>
+                            <a class="nav-link" href="tel:+959973159230" target="_blank"><i class="fas fa-phone fs-4 mt-2"></i></a>
                             <div class="ms-2">
                                 <h6>Phone</h6>
                                 <p>+959 973 159 230</p>
@@ -700,7 +718,7 @@
                         </div>
     
                         <div class="d-flex">
-                            <i class="fas fa-envelope fs-4 mt-2"></i>
+                            <a class="nav-link" href="mailto:zweaungnaing26@gmail.com" target="_blank"><i class="fas fa-envelope fs-4 mt-2"></i></a>
                             <div class="ms-2">
                                 <h6>Email</h6>
                                 <p>zweaungnaing26@gmail.com</p>
@@ -708,7 +726,7 @@
     
                         </div>
                         <div class="d-flex">
-                            <i class="fa-solid fa-map-location-dot fs-4 mt-2"></i>
+                            <a class="nav-link" href="https://goo.gl/maps/ESP57yQMvyMSV2AR8" target="_blank"><i class="fa-solid fa-map-location-dot fs-4 mt-2"></i></a>
                             <div class="ms-2">
                                 <h6>Address</h6>
                                 <p>Tarmwe</p>
