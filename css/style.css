@@ -70,6 +70,12 @@
     opacity:1;
 }
 
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color:#dc3545;
+    /* color:#212529 !important; */
+}
+
 /* Engd Navbar */
 
 /* Start banner */
@@ -139,6 +145,7 @@
     border:1px solid rgba(255,255,255,0.18);
     box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
 }
+
 
 
 /* End Project Section */
