@@ -139,6 +139,10 @@
     border:1px solid rgba(255,255,255,0.18);
     box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
 }
+
+.cards{
+    z-index:-1;
+}
 /* End Project Section */
 /* Start Markting Section */
 
@@ -222,7 +226,11 @@
 .bticon{
     width:100%;
     height:100%;
-    
+    z-index:1000;
+}
+
+.z-b{
+    z-index:-1;
 }
 
 

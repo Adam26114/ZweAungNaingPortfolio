@@ -91,6 +91,21 @@ function getPageList(totalPages, page, maxLength){
 	return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
 }
 
+// typeed 
+var typed = new Typed('.auto-types', {
+	strings: [
+		'<span>Zwe Aung Naing</span><span class="text-light">.</span>', 
+		'<span style="color:#ec650d;">Web Developer</span><span class="text-light">.</span>',
+		'<span style="color:#6e2bf1;">Web Designer</span><span class="text-light">.</span>',
+		'<span class="text-primary">Video Editor</span><span class="text-light">.</span>',
+		'<span style="color:#92e767;">Photo Editor</span><span class="text-light">.</span>'],
+	typeSpeed: 70,
+	backSpeed: 70,
+	smartBackspace: true,
+	loop: true
+});
+// typeed 
+
 $(function(){
 	var numberOfItems = $(".card-container .cards").length;
 	var limitPerPage = 6; //How many card items visible per a page
