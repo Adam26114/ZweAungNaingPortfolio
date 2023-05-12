@@ -20,7 +20,7 @@ getreadmore.addEventListener("click", function(){
     getseeless.classList.toggle('seemore');
     getdots.classList.toggle('seemore');
     if(getreadmore.textContent = "Read More"){
-        getreadmore.textContent =  "Read Less";G
+        getreadmore.textContent =  "Read Less";
     }else{
         getreadmore.textContent =  "Read More";
     }
