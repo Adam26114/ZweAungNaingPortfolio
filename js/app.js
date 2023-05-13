@@ -16,18 +16,18 @@ var getreadmore = document.querySelector(".redmorebtn");
 var getseeless = document.querySelector(".seeless");
 var getdots = document.querySelector(".dots");
 
-getreadmore.addEventListener("click", function(){
-    getseeless.classList.toggle('seemore');
-    getdots.classList.toggle('seemore');
-    if(getreadmore.textContent = "Read More"){
-        getreadmore.textContent =  "Read Less";
-    }else{
-        getreadmore.textContent =  "Read More";
-    }
-});
+// getreadmore.addEventListener("click", function(){
+//     getseeless.classList.toggle('seemore');
+//     getdots.classList.toggle('seemore');
+//     if(getreadmore.textContent = "Read More"){
+//         getreadmore.textContent =  "Read Less";
+//     }else{
+//         getreadmore.textContent =  "Read More";
+//     }
+// });
 
 
-// end banner
+// end bannerb
 // end header
 // Start footer
 var getyear = document.querySelector(".getyear");
@@ -94,11 +94,11 @@ function getPageList(totalPages, page, maxLength){
 // typeed 
 var typed = new Typed('.auto-types', {
 	strings: [
-		'<span>Zwe Aung Naing</span><span class="text-light">.</span>', 
-		'<span style="color:#ec650d;">Web Developer</span><span class="text-light">.</span>',
-		'<span style="color:#6e2bf1;">Web Designer</span><span class="text-light">.</span>',
-		'<span class="text-primary">Video Editor</span><span class="text-light">.</span>',
-		'<span style="color:#92e767;">Photo Editor</span><span class="text-light">.</span>'],
+		'<span class="h1">Zwe Aung Naing</span><span class="text-light h1">.</span>', 
+		'<span class="h1" style="color:#ec650d;">Web Developer</span><span class="text-light h1">.</span>',
+		'<span class="h1" style="color:#6e2bf1;">Web Designer</span><span class="text-light h1">.</span>',
+		'<span class="text-primary h1">Video Editor</span><span class="text-light h1">.</span>',
+		'<span class="h1" style="color:#92e767;">Photo Editor</span><span class="text-light h1">.</span>'],
 	typeSpeed: 70,
 	backSpeed: 70,
 	smartBackspace: true,

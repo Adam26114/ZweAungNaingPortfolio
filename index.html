@@ -52,7 +52,7 @@
 
             <div class="container">
 
-                <a href="index.html" class="navbar-brand text-light">Adam</a>
+                <a href="index.html" class="navbar-brand text-light logos">Adam</a>
     
                 <button class="navbar-toggler bg-danger rounded navicons" data-bs-toggle="collapse" data-bs-target="#collapse1">
                     <!-- <span class="navbar-toggler-icon"></span> -->
@@ -80,29 +80,30 @@
 
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
         <!-- start banner -->
-        <section id="home" class="pt-5" data-bs-spy="scroll">
+        <section id="home" class="pt-5 hero mt-3" data-bs-spy="scroll">
             <div class="container">
                 <div class="row mt-3 align-items-center">
     
-                    <div class="col-sm-12 col-md-6 ani-right">
-                        <div class="text-center">
+                    <div class="col-sm-12 col-md-5 ani-right">
+                        <div class="text-center profile-container">
                             <!-- <img src="./assets/img/profile/zwe_circle.png" class="rounded-circle shadow" width="100%" alt=""/> -->
                             <!-- <img src="./assets/img/profile/zwe_transparrent.png" class="rounded-circle shadow-lg profiles" width="100%" alt=""/> -->
-                            <img src="./assets/img/profile/zwe3.png" class="rounded-circle shadow profiles " width="50%" alt=""/>
+                            <img src="./assets/img/profile/zwe3.png" class="rounded-circle shadow profiles " width="90%" alt=""/>
                         </div>
                     </div>
                     
-                    <div class="col-sm-12 col-md-6 order-md-first ani-left mt-5">
+                    <div class="col-sm-12 col-md-7 order-md-first ani-left mt-5">
                         <div class="my_informations text-light">
-                            <div>
-                                <span class="h3">Hello I'm <span class="h3 auto-types text-danger"></span></span>
-                                
+                            <div class="w-100 d-flex flex-column justify-content-around">
+                                <span class="topline">Hello</span>
+                                <span class="h1">I'm <span class="h3 auto-types text-danger"></span></span>                             
                             </div>
-                            <p class="introduce">Hello, my name is Mr Zwe, and I am a web developer. I have a passion for creating beautiful and functional websites that are user-friendly and responsive. My expertise lies in developing websites using HTML, CSS, JavaScript, and other front-end technologies.As a web developer, I have worked on various projects, including building responsive web designs, integrating e-commerce platforms, developing custom Wor<span class="dots">...</span><span class="seeless">dPress themes, and creating interactive web applications. I am well-versed in using frameworks like React, Angular, and Vue, as well as CSS preprocessors like SASS and LESS.I believe that my attention to detail, problem-solving skills, and passion for learning make me an ideal candidate for any web development project. I enjoy working collaboratively with clients to ensure that their vision is brought to life in a way that is functional and visually appealing.In my free time, I enjoy experimenting with new technologies and frameworks to improve my skills and stay up-to-date with industry trends. I am always looking for new challenges and opportunities to grow as a web developer.Thank you for taking the time to read my introduction. I look forward to the opportunity to work with you on your next web development project.</span> </p>
+                            <p class="introduce mt-3">I'm Mr. Zwe, a web developer specializing in HTML, CSS, and JavaScript. I'm experienced in building responsive web designs, custom WordPress themes, and web applications using React, Angular, and Vue. I'm detail-oriented, a problem solver, and passionate about learning. I enjoy working with clients to bring their vision to life. In my free time, I experiment with new technologies to improve my skills and keep up with industry trends. Let's work together on your next web development project.</p>
                             
                         </div>
-                        <button class="btn btn-danger mt-3 me-2 redmorebtn">Read More</button>
-                        <button class="btn btn-outline-danger mt-3" data-bs-toggle="modal" data-bs-target="#modal">Check My CV</button>
+                        <!-- <button class="btn btn-danger mt-3 me-2 redmorebtn">Read More</button> -->
+                        <button class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#modal">Check My CV</button>
+                        <button class="btn btn-outline-danger mt-3 ms-2"><a href="#contact" class="nav-link">Hire Me</a></button>
                     </div>
                     
                  
@@ -667,7 +668,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-8 mt-3">
-                        <form accept="" method="" onsubmit="sendMail(); reset(); return false; ">
+                        <form onsubmit="sendMail(); resu">
     
                             <div class="row">
                                 <div class="col-6">
@@ -690,6 +691,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-danger px-4"><i class="fas fa-paper-plane me-1"></i> Send Message</button>
+                            </div>
                         </form>
     
                         <script src="https://smtpjs.com/v3/smtp.js" type="text/javascript">
@@ -710,9 +715,7 @@
     
                         </script>
     
-                        <div class="d-flex justify-content-end">
-                            <button type="button" class="btn btn-danger px-4"><i class="fas fa-paper-plane me-1"></i> Send Message</button>
-                        </div>
+                       
                     </div>
     
                     <div class="col-sm-12 col-md-4 order-md-first mt-3">
