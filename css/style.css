@@ -180,8 +180,12 @@
 }
 
 @media (max-width:720px) {
+    .profiles{
+        width:70%;
+    }
+
     .h1{
-        font-size:calc(1vw + 1.5rem);
+        font-size:calc(1vw + 1.3rem);
     }
 }
 
